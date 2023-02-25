@@ -1,0 +1,182 @@
+h3{
+    color: brown;
+    font-size: 25px;
+}
+:root{
+    font-family:'Quicksand', sans-serif;
+    min-height:100vh;
+    max-height:1280px;
+    background-color: grey;
+    margin:auto;
+}
+
+
+
+
+body{
+    margin: 0px !important;
+    background-color: white;
+    border: 1px solid rgb(196, 178, 178);
+    
+}
+.title{
+    color: white;
+    
+}
+
+.page-container{
+    
+
+}
+
+.nav{
+
+}
+
+nav {
+    height: 132px;
+    background-color: rgb(42, 56, 42);
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-between;
+}
+
+
+nav.logo{
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav.logo.title{
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+
+nav ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav ul li{
+    color:white;
+    padding: 22px 40px;
+    
+}
+
+nav ul li:hover{
+    background-color:grey;
+}
+
+nav ul li.active{
+    height: 25px;
+ 
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Tablets*/
+@media all and (max-width:800px){
+    nav{
+        justify-content:flex-start;
+    }
+
+
+    nav ul{
+    justify-content: space-between;
+  }
+}
+
+/* phones */
+@media all and (max-width:600px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul{
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    }
+
+    nav ul li{
+        text-align: center;
+    }
+
+}
+
+.banner{
+    
+    width: 100%;
+    height:500px;
+    background-size: 500px;
+    background-image: url(/Users/geetanjalijha/Desktop/SpaceN.jpg);
+    background-size: cover;
+    background-color: gray;
+   
+    
+}
+.banner .heading{
+    text-align: right;
+}
+
+
+
+.maintext{
+    font-size:18px;
+    padding: 12px;
+}
+.subtext{
+    display: flex;
+}
+
+.subtext div{
+   
+    padding: 20px;
+    margin:10px;
+    border-radius: 10px;
+    color:white
+}
+
+.subtext .red{
+    background-color: tomato;
+}
+
+.subtext .yellow{
+    background-color:rgb(141, 141, 40);
+}
+.subtext .green{
+    background-color: rgb(44, 140, 44);
+}
+.quote{
+    display: block;
+    background-color: rgb(148, 74, 139);
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+ .footer{
+   
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgb(42, 56, 42);
+   color: white;
+   text-align: center;
+   padding:24px
+   
+}
